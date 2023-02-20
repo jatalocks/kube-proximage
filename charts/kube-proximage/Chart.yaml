@@ -1,5 +1,5 @@
 ---
-home: https://github.com/explorium-ai/kube-proximage
+home: https://github.com/jatalocks/kube-proximage
 keywords:
   - mutating
   - webhook
@@ -7,7 +7,7 @@ keywords:
   - image
   - proxy
 sources:
-  - https://github.com/explorium-ai/kube-proximage
+  - https://github.com/jatalocks/kube-proximage
 annotations:
   category: Kubernetes
 apiVersion: v2

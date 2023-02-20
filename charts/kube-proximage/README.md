@@ -40,11 +40,11 @@ $ helm install kube-proximage/kube-proximage -n docker-proxy --create-namespace 
 | image.repository | string | `"jatalocks333/docker-proxy"` | The docker image repository to use |
 | image.tag | string | `"latest"` | The docker image tag to use |
 
-**Homepage:** <https://github.com/explorium-ai/kube-proximage>
+**Homepage:** <https://github.com/jatalocks/kube-proximage>
 
 ## Source Code
 
-* <https://github.com/explorium-ai/kube-proximage>
+* <https://github.com/jatalocks/kube-proximage>
 
 ## Maintainers
 

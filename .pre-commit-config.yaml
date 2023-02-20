@@ -1,5 +1,5 @@
 repos:
-  - repo: https://github.com/explorium-ai/kube-proximage.git
+  - repo: https://github.com/jatalocks/kube-proximage.git
     rev: "0.0.1"
     hooks:
       - id: helm-docs
