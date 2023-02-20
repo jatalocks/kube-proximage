@@ -9,9 +9,9 @@ keywords:
 sources:
   - https://github.com/jatalocks/kube-proximage
 annotations:
-  category: Kubernetes
+  category: Containers
 apiVersion: v2
-appVersion: "1.0"
+appVersion: "2.0"
 description: A Mutating Webhook for Automatic Image Container Proxies
 maintainers:
   - name: jatalocks
