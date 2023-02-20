@@ -3,7 +3,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/explorium-ai/kube-proximage)](https://img.shields.io/github/v/release/explorium-ai/kube-proximage)
 <!-- [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kube-proximage)](https://artifacthub.io/packages/search?repo=kube-proximage) -->
 
-**kube-proximage** is a helm chart that defines a mutating webhook to proxy container into custom registries
+**kube-proximage** is a helm chart that defines a mutating webhook to proxy container images into custom registries
 
 It uses [Next Trucking's Docker Proxy Operator](https://github.com/NextDeveloperTeam/kubernetes-webhooks/tree/main/docker-proxy-webhook) as its controller.
 
