@@ -26,6 +26,7 @@ config:
 ```
 
 - Install latest version of kube-proximage helm chart
+
 ```
 $ helm repo add kube-proximage https://jatalocks.github.io/kube-proximage/
 $ helm repo update
