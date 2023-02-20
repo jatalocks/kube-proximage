@@ -1,12 +1,12 @@
 # Kube-proximage
 
-![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-informational?style=for-the-badge)
+![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=for-the-badge)
 
 ![AppVersion: 1.0](https://img.shields.io/badge/AppVersion-1.0-informational?style=for-the-badge)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kube-proximage)](https://artifacthub.io/packages/search?repo=kube-proximage)
 ## Description
 
-A Kubernetes Image Puller and Cacher with Automatic Discovery
+A Mutating Webhook for Automatic Image Container Proxies
 
 ## Install
 
@@ -47,4 +47,4 @@ A Kubernetes Image Puller and Cacher with Automatic Discovery
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| explorium-ai | <devops@explorium.ai> | <https://www.explorium.ai/> |
+| jatalocks |  | <https://github.com/jatalocks> |
