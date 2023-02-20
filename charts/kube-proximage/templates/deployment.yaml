@@ -32,8 +32,8 @@ spec:
             - -metrics-addr=:18080
             - -health-addr=:18081
             - -listen-port=19443
-          image: 123456789012.dkr.ecr.us-east-1.amazonaws.com/registry/docker-proxy
-          imagePullPolicy: Always
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           # Graceful shutdown hack - sleep 15 seconds to give the k8s network
           # config time to update and stop routing new requests to this pod.
           lifecycle:

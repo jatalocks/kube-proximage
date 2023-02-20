@@ -14,3 +14,15 @@ config:
     k8s.gcr.io: org-name-k8s-gcr-io.jfrog.io
     us.gcr.io: org-name
     docker.elastic.co: org-name-docker-elastic-co.jfrog.io
+
+image:
+  # -- The docker image repository to use
+  repository: jatalocks333/docker-proxy
+  # -- The docker image tag to use
+  tag: latest
+  # -- The docker image pull policy
+  pullPolicy: Always
+
+# -- Enabled ServiceMonitor
+ServiceMonitor:
+  enabled: false

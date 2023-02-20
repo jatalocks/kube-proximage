@@ -7,6 +7,9 @@
 
 It uses [Next Trucking's Docker Proxy Operator](https://github.com/NextDeveloperTeam/kubernetes-webhooks/tree/main/docker-proxy-webhook) as its controller.
 
+## Dependencies
+
+- [Cert Manager](https://github.com/cert-manager/cert-manager)
 ## Install using Helm chart
 
 - Configure

@@ -35,7 +35,11 @@ A Mutating Webhook for Automatic Image Container Proxies
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| ServiceMonitor | object | `{"enabled":false}` | Enabled ServiceMonitor |
 | config | object | `{"domainMap":{"docker.elastic.co":"org-name-docker-elastic-co.jfrog.io","docker.io":"org-name-docker-io.jfrog.io","gcr.io":"org-name-gcr-io.jfrog.io","k8s.gcr.io":"org-name-k8s-gcr-io.jfrog.io","quay.io":"org-name-quay-io.jfrog.io","us.gcr.io":"org-name"},"ignoreList":["123456789012.dkr.ecr.us-east-1.amazonaws.com"]}` | Proxy Configuration |
+| image.pullPolicy | string | `"Always"` | The docker image pull policy |
+| image.repository | string | `"jatalocks333/docker-proxy"` | The docker image repository to use |
+| image.tag | string | `"latest"` | The docker image tag to use |
 
 **Homepage:** <https://github.com/explorium-ai/kube-proximage>
 

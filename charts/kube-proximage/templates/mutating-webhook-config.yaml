@@ -25,8 +25,7 @@ webhooks:
         name: docker-proxy-webhook
         path: /mutate
         port: 443
-    # TODO: come back and add `"v1"` once this is resolved: https://github.com/kubernetes-sigs/controller-runtime/issues/1161
-    admissionReviewVersions: ["v1beta1"]
+    admissionReviewVersions: ["v1"]
     sideEffects: None
     matchPolicy: Equivalent
     reinvocationPolicy: IfNeeded
