@@ -1,7 +1,6 @@
 # Kube Proximage
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatalocks/kube-proximage)](https://img.shields.io/github/v/release/jatalocks/kube-proximage)
-<!-- [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kube-proximage)](https://artifacthub.io/packages/search?repo=kube-proximage) -->
 
 **kube-proximage** is a helm chart that defines a mutating webhook to proxy container images into custom registries
 
