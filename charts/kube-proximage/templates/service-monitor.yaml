@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    app: docker-proxy-webhook
+  name: docker-proxy-webhook
+  namespace: docker-proxy
+spec:
+  endpoints:
+  - port: metrics
+  selector:
+    matchLabels:
+      app: docker-proxy-webhook
+  namespaceSelector:
+    matchNames:
+    - docker-proxy

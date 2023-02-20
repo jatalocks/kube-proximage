@@ -1,0 +1,32 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: docker-proxy-webhook
+  namespace: docker-proxy
+  annotations:
+    cert-manager.io/inject-ca-from: docker-proxy/docker-proxy-webhook-certificate
+webhooks:
+  - name: docker-proxy-webhook.nexttrucking.com
+    namespaceSelector:
+      matchExpressions:
+        - key: docker-proxy-webhook
+          operator: NotIn
+          values:
+            - disabled
+    rules:
+      - apiGroups:   [""]
+        apiVersions: ["v1"]
+        operations:  ["CREATE"]
+        resources:   ["pods"]
+        scope:       "*"
+    clientConfig:
+      service:
+        namespace: docker-proxy
+        name: docker-proxy-webhook
+        path: /mutate
+        port: 443
+    # TODO: come back and add `"v1"` once this is resolved: https://github.com/kubernetes-sigs/controller-runtime/issues/1161
+    admissionReviewVersions: ["v1beta1"]
+    sideEffects: None
+    matchPolicy: Equivalent
+    reinvocationPolicy: IfNeeded

@@ -1,0 +1,26 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: docker-proxy-webhook-certificate
+  namespace: docker-proxy
+spec:
+  secretName: docker-proxy-webhook-certificate
+  duration: 8760h # 365d
+  renewBefore: 360h # 15d
+  subject:
+    organizations:
+      - nexttrucking
+  isCA: false
+  privateKey:
+    size: 2048
+    algorithm: RSA
+    encoding: PKCS1
+  usages:
+    - server auth
+    - client auth
+  dnsNames:
+    - docker-proxy-webhook.docker-proxy.svc
+  issuerRef:
+    name: ca-cluster-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io

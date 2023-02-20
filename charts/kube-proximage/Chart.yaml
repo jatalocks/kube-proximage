@@ -1,0 +1,21 @@
+---
+home: https://github.com/explorium-ai/kube-proximage
+keywords:
+  - kube-fledged
+  - image
+  - kubernetes
+  - cache
+  - pull
+sources:
+  - https://github.com/explorium-ai/kube-proximage
+annotations:
+  category: Kubernetes
+apiVersion: v2
+appVersion: "1.0"
+description: A Kubernetes Image Puller and Cacher with Automatic Discovery
+maintainers:
+  - email: devops@explorium.ai
+    name: explorium-ai
+    url: https://www.explorium.ai/
+name: kube-proximage
+version: 1.1.2

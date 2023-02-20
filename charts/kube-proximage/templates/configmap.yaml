@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docker-proxy-config
+  namespace: docker-proxy
+data:
+  docker-proxy-config.yaml: |
+    ignoreList:
+    - "123456789012.dkr.ecr.us-east-1.amazonaws.com"
+    domainMap:
+      docker.io: org-name-docker-io.jfrog.io
+      quay.io: org-name-quay-io.jfrog.io
+      gcr.io: org-name-gcr-io.jfrog.io
+      k8s.gcr.io: org-name-k8s-gcr-io.jfrog.io
+      us.gcr.io: org-name
+      docker.elastic.co: org-name-docker-elastic-co.jfrog.io
