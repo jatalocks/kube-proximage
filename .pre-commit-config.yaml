@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/explorium-ai/kube-proximage.git
-    rev: 1.0.0-helm
+    rev: "0.0.1"
     hooks:
       - id: helm-docs
         args:
