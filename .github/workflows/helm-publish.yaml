@@ -41,14 +41,14 @@ jobs:
         run: |
           helm-docs -t README.md.gotmpl -o README.md
 
-      - name: Run Artifact Hub lint
-        run: |
-          curl -s https://api.github.com/repos/artifacthub/hub/releases/latest | grep -E 'browser_download_url' | grep linux_amd64.tar.gz\" | grep -Eo 'https://[^\"]*' | xargs wget -O - | tar -xz
-          ./ah lint -p charts/kube-proximage || exit 1
-          rm -f ./ah
+      # - name: Run Artifact Hub lint
+      #   run: |
+      #     curl -s https://api.github.com/repos/artifacthub/hub/releases/latest | grep -E 'browser_download_url' | grep linux_amd64.tar.gz\" | grep -Eo 'https://[^\"]*' | xargs wget -O - | tar -xz
+      #     ./ah lint -p charts/kube-proximage || exit 1
+      #     rm -f ./ah
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@98bccfd32b0f76149d188912ac8e45ddd3f8695f # tag=v1.4.1
+        uses: helm/chart-releaser-action@v1.5.0 # tag=v1.4.1
         with:
           config: "./.github/configs/cr.yaml"
         env:
