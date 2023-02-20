@@ -11,6 +11,7 @@ A Mutating Webhook for Automatic Image Container Proxies
 ## Install
 
 - Configure Registry Proxies
+
 ```yaml
 config:
   ignoreList:
@@ -23,6 +24,7 @@ config:
     us.gcr.io: org-name
     docker.elastic.co: org-name-docker-elastic-co.jfrog.io
 ```
+
 - Install latest version of kube-proximage helm chart
 ```
 $ helm repo add kube-proximage https://jatalocks.github.io/kube-proximage/

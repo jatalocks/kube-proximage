@@ -13,6 +13,7 @@ It uses [Next Trucking's Docker Proxy Operator](https://github.com/NextDeveloper
 ## Install using Helm chart
 
 - Configure
+
 ```yaml
 config:
   ignoreList:
@@ -25,6 +26,7 @@ config:
     us.gcr.io: org-name
     docker.elastic.co: org-name-docker-elastic-co.jfrog.io
 ```
+
 - Install latest version of kube-proximage helm chart
 
 ```
